@@ -1,0 +1,10 @@
+- Make tests work
+- How does the development flow go?
+ - error in spec files
+ - error in source files
+ - npm scripts like watch work
+- Make Travis work (update keys and stuff)
+- Move 'sphere-node-utils-org' out of there
+- Update all dependencies
+- Search for anything 'sphere'
+- Check GH commits and push

@@ -1,0 +1,48 @@
+{
+  "name": "@commercetools/product-type-import",
+  "version": "1.0.0",
+  "description": "Library that helps with importing product types into the commercetools platform.",
+  "keywords": [
+    "commercetools",
+    "product-type-import",
+    "product-type",
+    "product"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/nodejs/packages/product-type-import.git"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "npm run test:watch",
+    "prepublish": "npm run build",
+    "test": "cross-env NODE_PATH=./src tape -r babel-register tests/**/*.spec.js | tap-spec",
+    "test:watch": "chokidar src tests -c 'npm test'",
+    "build": "babel src -d lib",
+    "codecov": "cat ./coverage/lcov.info | codecov",
+    "coverage": "npm run lint && cross-env nyc --reporter=lcov --reporter=text npm test",
+    "lint": "../../scripts/lint.sh src tests"
+  },
+  "dependencies": {
+    "@commercetools/helper-get-api-credentials": "1.0.0",
+    "ajv": "^4.0.0",
+    "bluebird": "^2.11.0",
+    "lodash": "^4.6.1",
+    "sphere-node-sdk": "^1.10.1",
+    "sphere-node-utils": "^0.8.4",
+    "underscore": "^1.8.3",
+    "underscore-mixins": "^0.1.4"
+  },
+  "devDependencies": {
+    "cuid": "^1.3.8"
+  },
+  "config": {
+    "integration": {
+      "projectkey": "selwyn-forgery"
+    }
+  }
+}

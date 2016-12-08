@@ -1,0 +1,34 @@
+# Dummy Package A
+
+[![Travis Build Status][travis-icon]][travis]
+[![Codecov Coverage Status][codecov-icon]][codecov]
+[![David Dependencies Status][david-icon]][david]
+[![David devDependencies Status][david-dev-icon]][david-dev]
+
+A short description of what this project is about and it's core features. This might be followed by some points to clarify:
+- Do something with this
+- Supports other stuff
+
+## Usage
+How to use this project, possibly with a small code example. Could be split into CLI and direct usage.
+### CLI
+...
+### JS
+...
+
+## Configuration
+Options to choose from if there are any should be listed inside this file.
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md) for info on contributing to eslint-config
+
+[commercetools]: https://commercetools.com/
+[commercetools-icon]: https://cdn.rawgit.com/commercetools/press-kit/master/PNG/72DPI/CT%20logo%20horizontal%20RGB%2072dpi.png
+[travis]: https://travis-ci.org/commercetools/dummy-package-a
+[travis-icon]: https://img.shields.io/travis/commercetools/dummy-package-a/master.svg?style=flat-square
+[codecov]: https://codecov.io/gh/commercetools/dummy-package-a
+[codecov-icon]: https://img.shields.io/codecov/c/github/commercetools/dummy-package-a.svg?style=flat-square
+[david]: https://david-dm.org/commercetools/dummy-package-a
+[david-icon]: https://img.shields.io/david/commercetools/dummy-package-a.svg?style=flat-square
+[david-dev]: https://david-dm.org/commercetools/dummy-package-a?type=dev
+[david-dev-icon]: https://img.shields.io/david/dev/commercetools/dummy-package-a.svg?style=flat-square

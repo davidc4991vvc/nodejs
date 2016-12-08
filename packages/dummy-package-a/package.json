@@ -1,0 +1,28 @@
+{
+  "name": "@dummycreator/dummy-package-a",
+  "version": "7.0.2",
+  "description": "",
+  "keywords": [
+    "commercetools",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "main": "lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Siilwyn/lerna-labs/packages/dummy-package-a.git"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "npm run test:watch",
+    "prepublish": "npm run build",
+    "test": "cross-env NODE_ENV=test NODE_PATH=./src babel-node node_modules/.bin/tape test/*.spec.js test/**/*.spec.js | tap-spec",
+    "test:watch": "chokidar src test -c 'npm test'",
+    "build": "babel src -d lib",
+    "codecov": "cat ./coverage/lcov.info | codecov",
+    "coverage": "npm run lint && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm test",
+    "lint": "../../scripts/lint.sh src test"
+  }
+}
